@@ -80,7 +80,7 @@ def update_dashboard():
     streaming_data = pd.concat([streaming_data, new_data], ignore_index=True)
 
     with input_placeholder.container():
-        col00, col0, col1, col2, col3, col4 = st.columns([2,1,1,1,1,1])
+        col00, col0, col1, col2, col3, col4 = st.columns([1,1,1,1,1,1])
         with col00:
             st.image('assets/process_11.png')
         with col0:
@@ -97,7 +97,7 @@ def update_dashboard():
     # st.write('<div class="row-spacing"></div>', unsafe_allow_html=True)
 
     with output_placeholder.container():
-        col44, col45, col5, col6, col7, col8 = st.columns([2,1,1,1,1,1])
+        col44, col45, col5, col6, col7, col8 = st.columns([1,1,1,1,1,1])
         with col44:
             st.image('assets/process_21.png')
         with col45:
@@ -113,7 +113,7 @@ def update_dashboard():
             st.metric(label="Process 2: GHG", value= f'{coke_ghg} tCO2e', delta = 67.5, delta_color = 'inverse')
 
     with status_placeholder.container():
-        col84, col85, col9, col10, col11, col12 = st.columns([2,1,1,1,1,1])
+        col84, col85, col9, col10, col11, col12 = st.columns([1,1,1,1,1,1])
         with col84:
             st.image('assets/status-1.png')
         with col85:
